@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Defender Digital Innova - Soluciones avanzadas en Soporte TI, Ciberseguridad y Consultoría Tecnológica en Lima, Perú">
+    <meta name="keywords" content="soporte TI, ciberseguridad, hacking ético, auditoría, consultoría, Lima, Perú">
+    <title>Defender Digital Innova | Soluciones Tecnológicas Avanzadas</title>
+    
+    <!-- Seguridad: Prevención de clickjacking -->
+    <style id="antiClickjack">body{display:none !important;}</style>
+    <script>
+        if (self === top) {
+            var antiClickjack = document.getElementById("antiClickjack");
+            antiClickjack.parentNode.removeChild(antiClickjack);
+        } else {
+            top.location = self.location;
+        }
+    </script>
+    
+    <!-- Prevención de MIME Sniffing -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    
+    <!-- Prevención de XSS -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-src 'none';">
+    
+    <!-- Prevención de referrer -->
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <!-- Fuentes y estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0d3b66;
+            --secondary: #1d7a85;
+            --accent: #f95738;
+            --light: #f4f4f9;
+            --dark: #1a1a2e;
+            --success: #28a745;
+            --warning: #ffc107;
+            --danger: #dc3545;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--light);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 15px;
+        }
+        
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .logo-text span {
+            color: var(--accent);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+        
+        nav ul li a:hover, 
+        nav ul li a.active {
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(13, 59, 102, 0.8), rgba(13, 59, 102, 0.9)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding-top: 80px;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .btn:hover {
+            background-color: #e24628;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* Servicios */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent);
+            border-radius: 2px;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: var(--transition);
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        
+        /* Acerca de */
+        .about {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-text h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .about-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Testimonios */
+        .testimonials {
+            background-color: #f8f9fa;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '\201C';
+            font-size: 5rem;
+            color: rgba(29, 122, 133, 0.1);
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-family: serif;
+        }
+        
+        .testimonial-content {
+            margin-top: 30px;
+        }
+        
+        .client-info {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        .client-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+        }
+        
+        .client-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Contacto */
+        .contact-form {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--secondary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(29, 122, 133, 0.2);
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-column ul li a:hover {
+            color: var(--accent);
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background-color: var(--accent);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-image {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu {
+                display: block;
+            }
+            
+            nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--primary);
+                padding: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+            }
+            
+            nav.active {
+                max-height: 300px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                padding: 20px 0;
+            }
+            
+            nav ul li {
+                margin: 10px 20px;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+        
+        /* Animaciones */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        
+        .hidden {
+            opacity: 0;
+        }
+        
+        /* Seguridad adicional */
+        .security-badge {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--success);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+        }
+        
+        .security-badge i {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera de seguridad -->
+    <div class="security-badge">
+        <i class="fas fa-shield-alt"></i> Sitio Protegido
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="logo-text">Defender <span>Digital</span> Innova</div>
+            </div>
+            
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#inicio" class="active">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="animate hidden">Protección Digital para el Futuro</h1>
+            <p class="animate hidden">Defender Digital Innova ofrece soluciones avanzadas en ciberseguridad, soporte TI y consultoría tecnológica para empresas en Lima, Perú. Protegemos su negocio en el mundo digital.</p>
+            <a href="#contacto" class="btn animate hidden">Contáctenos</a>
+        </div>
+    </section>
+    
+    <!-- Servicios -->
+    <section id="servicios" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Servicios</h2>
+                <p>Soluciones tecnológicas avanzadas para su negocio</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card animate hidden">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Soporte TI</h3>
+                    <p>Servicio de soporte técnico integral para empresas, con respuesta inmediata 24/7 y soluciones personalizadas para su infraestructura tecnológica.</p>
+                </div>
+                
+                <div class="service-card animate hidden">
+                    <div class="service-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Ciberseguridad</h3>
+                    <p>Protección avanzada contra amenazas cibernéticas, implementación de firewalls, detección de intrusiones y planes de respuesta ante incidentes.</p>
+                </div>
+                
+                <div class="service-card animate hidden">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Auditoría</h3>
+                    <p>Evaluaciones exhaustivas de seguridad informática, análisis de vulnerabilidades y recomendaciones para fortalecer sus defensas digitales.</p>
+                </div>
+                
+                <div class="service-card animate hidden">
+                    <div class="service-icon">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h3>Hacking Ético</h3>
+                    <p>Simulaciones de ataques controlados para identificar vulnerabilidades antes que los ciberdelincuentes y fortalecer sus sistemas.</p>
+                </div>
+                
+                <div class="service-card animate hidden">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Consultoría Tecnológica</h3>
+                    <p>Asesoramiento estratégico para la transformación digital, implementación de tecnologías emergentes y optimización de procesos.</p>
+                </div>
+                
+                <div class="service-card animate hidden">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Servicios en la Nube</h3>
+                    <p>Migración, implementación y gestión de soluciones cloud seguras y escalables para su negocio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Acerca de Nosotros -->
+    <section id="nosotros" class="section about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Defender Digital Innova</h2>
+                    <p>Fundada en Lima, Perú en 2025, Defender Digital Innova nace con la misión de proteger a las empresas en su transformación digital. Somos un equipo de expertos en tecnología con más de 15 años de experiencia en ciberseguridad, infraestructura TI y consultoría estratégica.</p>
+                    <p>Nuestro enfoque combina soluciones tecnológicas avanzadas con un profundo conocimiento de las necesidades específicas de cada industria. Trabajamos con empresas de todos los tamaños, desde startups hasta grandes corporaciones.</p>
+                    <p>En Defender Digital Innova, creemos que la seguridad no es un gasto, sino una inversión esencial para el crecimiento y la sostenibilidad de cualquier negocio en la era digital.</p>
+                    <a href="#contacto" class="btn">Conozca más</a>
+                </div>
+                
+                <div class="about-image">
+                    <div style="background-color: #1a1a2e; height: 100%; display: flex; align-items: center; justify-content: center; color: white; padding: 30px; text-align: center;">
+                        <i class="fas fa-building" style="font-size: 4rem; margin-bottom: 20px;"></i>
+                        <h3>Nuestra Sede en Lima</h3>
+                        <p>Av. Javier Prado 1234, San Isidro</p>
+                        <p>Lima, Perú</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonios -->
+    <section id="testimonios" class="section testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Lo Que Dicen Nuestros Clientes</h2>
+                <p>Empresas que confían en nuestros servicios</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card animate hidden">
+                    <div class="testimonial-content">
+                        <p>"Defender Digital Innova transformó nuestra seguridad informática. Su equipo de hacking ético identificó vulnerabilidades que nunca hubiéramos detectado por nuestra cuenta."</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="client-image">
+                            <i class="fas fa-user-circle" style="font-size: 3rem; color: #1d7a85;"></i>
+                        </div>
+                        <div>
+                            <h4>Carlos Mendoza</h4>
+                            <p>Director de TI, Financiera CrediPerú</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card animate hidden">
+                    <div class="testimonial-content">
+                        <p>"El servicio de soporte TI 24/7 ha sido fundamental para nuestra operación. Respuesta inmediata y soluciones efectivas que mantienen nuestro negocio funcionando sin interrupciones."</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="client-image">
+                            <i class="fas fa-user-circle" style="font-size: 3rem; color: #1d7a85;"></i>
+                        </div>
+                        <div>
+                            <h4>María Fernanda Ríos</h4>
+                            <p>Gerente General, RetailTech</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card animate hidden">
+                    <div class="testimonial-content">
+                        <p>"La consultoría tecnológica de Defender Digital Innova nos ayudó a optimizar nuestros procesos y reducir costos en un 30%. Su enfoque estratégico es invaluable."</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="client-image">
+                            <i class="fas fa-user-circle" style="font-size: 3rem; color: #1d7a85;"></i>
+                        </div>
+                        <div>
+                            <h4>Roberto Salazar</h4>
+                            <p>CEO, Logística Andes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contacto -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contáctenos</h2>
+                <p>Estamos listos para proteger su negocio</p>
+            </div>
+            
+            <div class="contact-form animate hidden" style="max-width: 800px; margin: 0 auto;">
+                <form id="contactForm" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="company">Empresa</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Servicio de Interés</label>
+                        <select id="service" name="service" required>
+                            <option value="">Seleccione un servicio</option>
+                            <option value="soporte">Soporte TI</option>
+                            <option value="ciberseguridad">Ciberseguridad</option>
+                            <option value="auditoria">Auditoría</option>
+                            <option value="hacking">Hacking Ético</option>
+                            <option value="consultoria">Consultoría Tecnológica</option>
+                            <option value="cloud">Servicios en la Nube</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Defender Digital Innova</h3>
+                    <p>Protegiendo el futuro digital de su negocio con soluciones avanzadas en ciberseguridad y tecnología.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="#">Soporte TI</a></li>
+                        <li><a href="#">Ciberseguridad</a></li>
+                        <li><a href="#">Auditoría</a></li>
+                        <li><a href="#">Hacking Ético</a></li>
+                        <li><a href="#">Consultoría Tecnológica</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Javier Prado 1234, San Isidro, Lima</li>
+                        <li><i class="fas fa-phone"></i> +51 1 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@defenderdigitalinnova.com</li>
+                        <li><i class="fas fa-clock"></i> Lunes a Viernes: 8:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Defender Digital Innova. Todos los derechos reservados. | Lima, Perú</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        // Menu Mobile
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const nav = document.querySelector('nav');
+        
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+        
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Cerrar menú móvil si está abierto
+                    nav.classList.remove('active');
+                }
+            });
+        });
+        
+        // Animaciones al hacer scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                    entry.target.classList.remove('hidden');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        
+        document.querySelectorAll('.hidden').forEach(element => {
+            observer.observe(element);
+        });
+        
+        // Validación de formulario
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Validación básica
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && service && message) {
+                // Simular envío exitoso
+                alert('¡Gracias por contactarnos! Su mensaje ha sido enviado. Nos comunicaremos con usted pronto.');
+                contactForm.reset();
+            } else {
+                alert('Por favor complete todos los campos requeridos.');
+            }
+        });
+        
+        // Prevención de vulnerabilidades
+        // Protección contra XSS en inputs
+        const sanitizeInput = (input) => {
+            return input.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        };
+        
+        // Aplicar sanitización a campos de formulario al enviar
+        contactForm.addEventListener('submit', function(e) {
+            const inputs = contactForm.querySelectorAll('input, textarea');
+            inputs.forEach(input => {
+                input.value = sanitizeInput(input.value);
+            });
+        });
+    </script>
+</body>
+</html>
