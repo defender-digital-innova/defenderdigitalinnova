@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | CyberZenith Innovations - Desarrollo Web & Ciberseguridad</title>
+    <meta name="description" content="Contacta a CyberZenith Innovations para proyectos de desarrollo web seguro, UI/UX y pentesting testing. Presupuestos sin compromiso.">
+    
+    <style>
+        :root {
+            --primary-cyber: #0066cc;
+            --secondary-dark: #1a1a1a;
+            --accent-red: #ff4444;
+            --neutral-light: #f8f9fa;
+            --text-primary: #333333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--neutral-light);
+        }
+        
+        .security-alert {
+            background: var(--accent-red);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+        
+        .header {
+            background: var(--secondary-dark);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary-cyber);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+        
+        .nav-links a:hover, .nav-links a.active {
+            background: var(--primary-cyber);
+            color: white;
+        }
+        
+        .mobile-menu {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        .page-hero {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%231a1a1a" width="1200" height="600"/></svg>');
+            background-size: cover;
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        
+        .page-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-content {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+        
+        .contact-info {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .contact-methods {
+            margin-top: 2rem;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: var(--neutral-light);
+            border-radius: 8px;
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--primary-cyber);
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .form-input, .form-textarea, .form-select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        .form-input:focus, .form-textarea:focus, .form-select:focus {
+            outline: none;
+            border-color: var(--primary-cyber);
+        }
+        
+        .form-textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .submit-btn {
+            background: var(--primary-cyber);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            background: #0052a3;
+            transform: translateY(-2px);
+        }
+        
+        .faq-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+        
+        .faq-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            background: var(--neutral-light);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 1.5rem;
+            max-height: 500px;
+        }
+        
+        .faq-toggle {
+            transition: transform 0.3s;
+        }
+        
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+        
+        .availability-section {
+            background: var(--secondary-dark);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .availability-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .availability-badge {
+            display: inline-block;
+            background: var(--primary-cyber);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+        
+        .footer {
+            background: #111;
+            color: white;
+            padding: 3rem 2rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: var(--primary-cyber);
+            margin-bottom: 1rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem;
+            border-radius: 5px;
+            background: #333;
+            transition: background 0.3s;
+        }
+        
+        .social-links a:hover {
+            background: var(--primary-cyber);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #333;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--secondary-dark);
+                flex-direction: column;
+                padding: 1rem;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            .page-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="security-alert">
+        🔒 Conexión Segura | Contacto Seguro 2025-2026 | CyberZenith Innovations
+    </div>
+    
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">CyberZenith</div>
+            <button class="mobile-menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="portfolio.html">Portafolio</a></li>
+                <li><a href="about.html">Sobre Mí</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <h1>Contacto</h1>
+        <p>Hablemos sobre tu proyecto. Presupuestos sin compromiso</p>
+    </section>
+
+    <section class="contact-content">
+        <div class="contact-info">
+            <h2>Información de Contacto</h2>
+            <p>Estoy disponible para discutir tu proyecto y proporcionar un presupuesto detallado sin compromiso.</p>
+            
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>webdev.student123@outlook.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <h3>Ubicación</h3>
+                        <p>Lima, Perú<br>Servicios Remotos Globales</p>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-icon">🌐</div>
+                    <div>
+                        <h3>GitHub</h3>
+                        <p>github.com/CyberZenithAI</p>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-icon">🕒</div>
+                    <div>
+                        <h3>Disponibilidad</h3>
+                        <p>Respuesta en 24 horas<br>Proyectos 2025-2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-form">
+            <h2>Formulario de Contacto</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name" class="form-label">Nombre Completo</label>
+                    <input type="text" id="name" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="company" class="form-label">Empresa (Opcional)</label>
+                    <input type="text" id="company" class="form-input">
+                </div>
+                
+                <div class="form-group">
+                    <label for="service" class="form-label">Servicio de Interés</label>
+                    <select id="service" class="form-select" required>
+                        <option value="">Seleccionar servicio</option>
+                        <option value="web">Desarrollo Web Seguro</option>
+                        <option value="ui">Desarrollo UI/UX</option>
+                        <option value="pentesting">Pentesting Testing</option>
+                        <option value="consultoria">Consultoría</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="budget" class="form-label">Presupuesto Estimado</label>
+                    <select id="budget" class="form-select">
+                        <option value="">Seleccionar rango</option>
+                        <option value="500-1500">S/ 500 - S/ 1,500</option>
+                        <option value="1500-3500">S/ 1,500 - S/ 3,500</option>
+                        <option value="3500-7000">S/ 3,500 - S/ 7,000</option>
+                        <option value="7000+">S/ 7,000+</option>
+                        <option value="por-definir">Por definir</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea id="message" class="form-textarea" placeholder="Describe tu proyecto, objetivos y requisitos..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Preguntas Frecuentes</h2>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <div class="faq-question">
+                    ¿Cuál es el tiempo de respuesta para consultas?
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Respondo a todas las consultas dentro de las 24 horas siguientes. Para proyectos urgentes, indicar en el mensaje para priorizar la respuesta.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    ¿Ofrecen servicios de mantenimiento después del proyecto?
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Sí, ofrezco planes de mantenimiento mensual que incluyen actualizaciones de seguridad, soporte técnico y mejoras menores. Los precios varían según la complejidad del proyecto.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    ¿Trabajan con empresas internacionales?
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutamente. Trabajo con clientes de todo el mundo de forma remota. Uso herramientas de colaboración en tiempo real y mantengo horarios flexibles para diferentes zonas horarias.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    ¿Qué metodologías de desarrollo utilizan?
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Utilizo metodologías ágiles con enfoque en seguridad desde el diseño. Implemento prácticas de DevSecOps y siguiendo estándares OWASP para desarrollo web seguro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="availability-section">
+        <div class="availability-content">
+            <h2>Disponibilidad 2025-2026</h2>
+            <div class="availability-badge">DISPONIBLE PARA NUEVOS PROYECTOS</div>
+            <p>Actualmente aceptando nuevos proyectos de desarrollo web, UI/UX y pentesting testing.</p>
+            <p>Plazos de entrega flexibles según la complejidad del proyecto.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>CyberZenith Innovations</h3>
+                <p>Expertos en desarrollo web seguro y ciberseguridad. Soluciones innovadoras para empresas y startups.</p>
+                <div class="social-links">
+                    <a href="https://github.com/CyberZenithAI" title="GitHub">GitHub</a>
+                    <a href="https://linkedin.com" title="LinkedIn">LinkedIn</a>
+                    <a href="mailto:webdev.student123@outlook.com" title="Email">Email</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Servicios</h3>
+                <ul style="list-style: none;">
+                    <li><a href="servicios.html#web" style="color: #ccc; text-decoration: none;">Desarrollo Web</a></li>
+                    <li><a href="servicios.html#ui" style="color: #ccc; text-decoration: none;">UI/UX Design</a></li>
+                    <li><a href="servicios.html#pentesting" style="color: #ccc; text-decoration: none;">Pentesting</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📧 webdev.student123@outlook.com</p>
+                <p>📍 Lima, Perú</p>
+                <p>🌐 Remoto Global</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025-2026 CyberZenith Innovations. Todos los derechos reservados.</p>
+            <p>Desarrollo Web Seguro | UI/UX Avanzado | Pentesting Testing</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Menú móvil
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (mobileMenu) {
+                mobileMenu.addEventListener('click', function() {
+                    navLinks.classList.toggle('active');
+                });
+            }
+            
+            // Cerrar menú al hacer clic en un enlace
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.classList.remove('active');
+                });
+            });
+            
+            // FAQ toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', function() {
+                    // Cerrar otros items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+            
+            // Form submission
+            const contactForm = document.getElementById('contactForm');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Validación básica
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const message = document.getElementById('message').value;
+                    
+                    if (!name || !email || !message) {
+                        alert('Por favor, completa todos los campos obligatorios.');
+                        return;
+                    }
+                    
+                    // Simular envío (en un caso real, aquí iría la lógica para enviar el formulario)
+                    alert('¡Mensaje enviado! Te contactaré dentro de 24 horas.');
+                    contactForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
