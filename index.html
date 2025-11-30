@@ -1,94 +1,278 @@
 <!DOCTYPE html>
-<html lang="es-PE">
+<html lang="es" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberZenith Innovations | Expertos en Ciberseguridad & Desarrollo Web - Lima, Perú</title>
-    <meta name="description" content="Expertos Master en Desarrollo Web, UI/UX y Pentesting Testing. Consultoría avanzada en ciberseguridad 2025-2026. Precios accesibles para startups y empresas.">
-    <meta name="author" content="Joaquin Ocampo - CyberZenith Innovations">
+    <title>CyberZenith Innovations Perú | Expertos Elite en Ciberseguridad & Desarrollo Web Seguro</title>
+    <meta name="description" content="Consultoría elite en Ciberseguridad SOC, Pentesting Web OWASP Top 10 2025 y Desarrollo UI Seguro. Expertos certificados Cisco, SecurityBlue Team. Lima Perú & Remoto Global">
     
-    <!-- Security Headers -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:;">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
+    <!-- SEO ESTRATÉGICO 10/10 -->
+    <meta name="keywords" content="ciberseguridad perú, pentesting web lima, desarrollo ui seguro, soc analyst, ethical hacking, seguridad informática, consultoría ti perú, owasp top 10 2025">
+    <meta name="author" content="Joaquin Ocampo - CyberZenith Innovations Perú">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="geo.region" content="PE-LIM">
+    <meta name="geo.placename" content="Lima">
+    <meta name="geo.position" content="-12.046374;-77.042793">
+    <meta name="ICBM" content="-12.046374, -77.042793">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="CyberZenith Innovations Perú | Expertos Elite en Ciberseguridad">
+    <meta property="og:description" content="Consultoría elite en Ciberseguridad SOC, Pentesting Web OWASP Top 10 2025 y Desarrollo UI Seguro">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cyberzenith-innovations.pe">
+    <meta property="og:image" content="https://cyberzenith-innovations.pe/assets/og-image.jpg">
+    <meta property="og:site_name" content="CyberZenith Innovations Perú">
+    <meta property="og:locale" content="es_PE">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CyberZenith Innovations Perú | Ciberseguridad Elite">
+    <meta name="twitter:description" content="Expertos en Ciberseguridad SOC, Pentesting Web y Desarrollo UI Seguro">
+    <meta name="twitter:image" content="https://cyberzenith-innovations.pe/assets/twitter-image.jpg">
+    
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CyberZenith Innovations Perú",
+      "alternateName": "CyberZenith Innovations",
+      "url": "https://cyberzenith-innovations.pe",
+      "logo": "https://cyberzenith-innovations.pe/assets/logo.svg",
+      "description": "Consultoría elite en Ciberseguridad SOC, Pentesting Web OWASP Top 10 2025 y Desarrollo UI Seguro",
+      "foundingDate": "2025",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Javier Prado Este 1234",
+        "addressLocality": "Lima",
+        "addressRegion": "Lima",
+        "postalCode": "15036",
+        "addressCountry": "PE"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+51-987-654-321",
+        "contactType": "customer service",
+        "email": "consultas@cyberzenith-innovations.pe",
+        "availableLanguage": ["es", "en"]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/joaquin-ocampo",
+        "https://github.com/CyberZenithAI",
+        "https://cyberzenith-innovations.pe"
+      ],
+      "areaServed": "PE",
+      "serviceType": "Cybersecurity Consulting",
+      "services": [
+        "SOC Monitoring",
+        "Web Pentesting",
+        "Secure UI Development",
+        "Vulnerability Assessment"
+      ]
+    }
+    </script>
+    
+    <!-- Prevención de vulnerabilidades -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:;">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#0066CC">
+    
+    <!-- Performance Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
+        /* === VARIABLES GLOBALES === */
         :root {
-            --primary-cyber: #0066cc;
-            --secondary-dark: #1a1a1a;
-            --accent-red: #ff4444;
-            --neutral-light: #f8f9fa;
-            --text-primary: #333333;
-            --success-green: #00cc66;
+            --primary: #0066CC;
+            --primary-dark: #0052A3;
+            --secondary: #FF6B00;
+            --secondary-dark: #E55A00;
+            --dark: #1A1A1A;
+            --dark-light: #2D2D2D;
+            --light: #F8F9FA;
+            --gray: #6C757D;
+            --success: #28A745;
+            --danger: #DC3545;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+            --border-radius: 8px;
+            --transition: all 0.3s ease;
         }
-        
+
+        [data-lang="en"] {
+            display: none;
+        }
+
+        /* === RESET Y BASE === */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
         body {
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            font-family: 'Inter', sans-serif;
             line-height: 1.6;
-            color: var(--text-primary);
-            background: var(--neutral-light);
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
         }
-        
-        .security-alert {
-            background: var(--accent-red);
-            color: white;
-            text-align: center;
-            padding: 10px;
-            font-size: 0.9em;
+
+        .lang-es {
+            display: block;
         }
-        
-        .header {
-            background: var(--secondary-dark);
-            color: white;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+
+        .lang-en {
+            display: none;
         }
-        
-        .nav-container {
+
+        body[data-lang="en"] .lang-es {
+            display: none;
+        }
+
+        body[data-lang="en"] .lang-en {
+            display: block;
+        }
+
+        /* === TIPOGRAFÍA === */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: var(--dark);
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            color: var(--dark-light);
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--gray);
+        }
+
+        /* === LAYOUT === */
+        .container {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 5rem 0;
+        }
+
+        /* === HEADER === */
+        .header {
+            background: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .header.scrolled {
+            background: rgba(26, 26, 26, 0.98);
+            box-shadow: var(--shadow);
+        }
+
+        .nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 2rem;
         }
-        
+
         .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: var(--primary-cyber);
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: white;
         }
-        
+
+        .logo span {
+            color: var(--secondary);
+        }
+
         .nav-links {
             display: flex;
             list-style: none;
             gap: 2rem;
         }
-        
+
         .nav-links a {
             color: white;
             text-decoration: none;
             font-weight: 500;
-            transition: color 0.3s;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
+            transition: var(--transition);
+            position: relative;
         }
-        
-        .nav-links a:hover, .nav-links a.active {
-            background: var(--primary-cyber);
+
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--secondary);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .lang-switcher {
+            background: transparent;
+            border: 1px solid var(--gray);
             color: white;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
         }
-        
-        .mobile-menu {
+
+        .lang-switcher:hover {
+            border-color: var(--secondary);
+            color: var(--secondary);
+        }
+
+        .mobile-menu-btn {
             display: none;
             background: none;
             border: none;
@@ -96,375 +280,1192 @@
             font-size: 1.5rem;
             cursor: pointer;
         }
-        
+
+        /* === HERO SECTION === */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%231a1a1a" width="1200" height="800"/><circle fill="%230066cc" opacity="0.1" cx="200" cy="200" r="100"/><circle fill="%230066cc" opacity="0.1" cx="1000" cy="600" r="150"/></svg>');
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%231a1a1a" width="1200" height="800"/><g fill="%230066cc" opacity="0.1"><circle cx="200" cy="100" r="50"/><circle cx="800" cy="150" r="80"/><circle cx="1000" cy="400" r="60"/><circle cx="400" cy="600" r="70"/><circle cx="150" cy="500" r="40"/></g></svg>');
             background-size: cover;
+            background-position: center;
             color: white;
-            padding: 8rem 2rem;
+            padding: 180px 0 100px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
         }
-        
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-            animation: fadeInUp 1s ease;
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(0, 102, 204, 0.3) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 20%, rgba(255, 107, 0, 0.2) 0%, transparent 50%);
+            z-index: 1;
         }
-        
-        .hero p {
-            font-size: 1.3rem;
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
             margin-bottom: 2rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            animation: fadeInUp 1s ease 0.3s both;
+            color: rgba(255, 255, 255, 0.9);
         }
-        
-        .cta-button {
+
+        .badge {
             display: inline-block;
-            background: var(--primary-cyber);
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
-            padding: 1rem 2.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            border-radius: var(--border-radius);
             text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: all 0.3s;
-            animation: fadeInUp 1s ease 0.6s both;
+            font-weight: 600;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
         }
-        
-        .cta-button:hover {
-            background: #0052a3;
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+        }
+
+        .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,102,204,0.4);
+            box-shadow: var(--shadow-lg);
         }
-        
-        .services-preview {
-            max-width: 1200px;
-            margin: 5rem auto;
-            padding: 0 2rem;
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
         }
-        
-        .section-title {
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--dark);
+        }
+
+        /* === SERVICES SECTION === */
+        .services {
+            background: white;
+        }
+
+        .section-header {
             text-align: center;
             margin-bottom: 3rem;
-            font-size: 2.5rem;
-            color: var(--secondary-dark);
         }
-        
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
         }
-        
+
         .service-card {
             background: white;
+            border-radius: var(--border-radius);
             padding: 2.5rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            transition: all 0.3s;
-            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
         }
-        
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+
         .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
         }
-        
+
         .service-icon {
             font-size: 3rem;
             margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
-        
-        .web-dev { color: var(--primary-cyber); }
-        .ui-ux { color: var(--success-green); }
-        .pentesting { color: var(--accent-red); }
-        
-        .stats-section {
-            background: var(--secondary-dark);
+
+        .service-card h3 {
+            margin-bottom: 1rem;
+        }
+
+        .service-features {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .service-features li {
+            padding: 0.5rem 0;
+            color: var(--gray);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .service-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        /* === EXPERTISE SECTION === */
+        .expertise {
+            background: linear-gradient(135deg, var(--dark) 0%, var(--dark-light) 100%);
             color: white;
-            padding: 4rem 2rem;
-            text-align: center;
         }
-        
+
+        .expertise .section-header h2,
+        .expertise .section-subtitle {
+            color: white;
+        }
+
         .stats-grid {
-            max-width: 1200px;
-            margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 2rem;
+            margin-bottom: 3rem;
         }
-        
-        .stat-item h3 {
-            font-size: 2.5rem;
-            color: var(--primary-cyber);
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--border-radius);
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             margin-bottom: 0.5rem;
         }
-        
-        .footer {
-            background: #111;
-            color: white;
-            padding: 3rem 2rem;
+
+        .stat-label {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
         }
-        
+
+        .certifications {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .cert-badge {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* === PRICING SECTION === */
+        .pricing {
+            background: white;
+        }
+
+        .pricing-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .pricing-tab {
+            padding: 1rem 2rem;
+            background: none;
+            border: none;
+            font-weight: 600;
+            color: var(--gray);
+            cursor: pointer;
+            transition: var(--transition);
+            border-bottom: 3px solid transparent;
+        }
+
+        .pricing-tab.active {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
+            box-shadow: var(--shadow);
+            border: 1px solid #e9ecef;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .pricing-card.featured {
+            border: 2px solid var(--primary);
+            transform: scale(1.05);
+        }
+
+        .pricing-card.featured::before {
+            content: 'Más Popular';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: white;
+            padding: 0.25rem 1rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--dark);
+            margin: 1rem 0;
+        }
+
+        .price-period {
+            color: var(--gray);
+            font-size: 0.875rem;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .pricing-features li {
+            padding: 0.5rem 0;
+            color: var(--gray);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .pricing-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        .pricing-features li.disabled {
+            color: #adb5bd;
+        }
+
+        .pricing-features li.disabled::before {
+            content: '✗';
+            color: var(--danger);
+        }
+
+        /* === CONTACT SECTION === */
+        .contact {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+        }
+
+        .contact .section-header h2,
+        .contact .section-subtitle {
+            color: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--secondary);
+        }
+
+        .contact-details h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--border-radius);
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-family: inherit;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--secondary);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        /* === FOOTER === */
+        .footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 0 1.5rem;
+        }
+
         .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
+            margin-bottom: 2rem;
         }
-        
-        .footer-section h3 {
-            color: var(--primary-cyber);
-            margin-bottom: 1rem;
+
+        .footer-column h4 {
+            margin-bottom: 1.5rem;
+            color: white;
         }
-        
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+        }
+
         .social-links {
             display: flex;
             gap: 1rem;
             margin-top: 1rem;
         }
-        
-        .social-links a {
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
             color: white;
             text-decoration: none;
-            padding: 0.5rem;
-            border-radius: 5px;
-            background: #333;
-            transition: background 0.3s;
+            transition: var(--transition);
         }
-        
-        .social-links a:hover {
-            background: var(--primary-cyber);
+
+        .social-link:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
         }
-        
-        .copyright {
+
+        .footer-bottom {
             text-align: center;
-            margin-top: 2rem;
-            padding-top: 2rem;
-            border-top: 1px solid #333;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.875rem;
         }
-        
-        @keyframes fadeInUp {
+
+        /* === WHATSAPP BUTTON === */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: var(--shadow-lg);
+            z-index: 1000;
+            transition: var(--transition);
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-btn i {
+            font-size: 1.5rem;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        /* === RESPONSIVE DESIGN === */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+            }
+            
+            .services-grid,
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-card.featured {
+                transform: none;
+            }
+            
+            .whatsapp-btn {
+                bottom: 1rem;
+                right: 1rem;
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        /* === ACCESSIBILITY === */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* === LOADING STATES === */
+        .loading {
+            opacity: 0.7;
+            pointer-events: none;
+        }
+
+        /* === ANIMATIONS === */
+        @keyframes fadeIn {
             from {
                 opacity: 0;
-                transform: translateY(30px);
+                transform: translateY(20px);
             }
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: var(--secondary-dark);
-                flex-direction: column;
-                padding: 1rem;
-            }
-            
-            .nav-links.active {
-                display: flex;
-            }
-            
-            .mobile-menu {
-                display: block;
-            }
-            
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero p {
-                font-size: 1.1rem;
-            }
+
+        .fade-in {
+            animation: fadeIn 0.6s ease forwards;
         }
     </style>
 </head>
-<body>
-    <div class="security-alert">
-        🔒 Conexión Segura | Protegido con Encriptación TLS 1.3 | CyberZenith Innovations 2025
-    </div>
-    
-    <header class="header">
-        <nav class="nav-container">
-            <div class="logo">CyberZenith</div>
-            <button class="mobile-menu">☰</button>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Inicio</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="portfolio.html">Portafolio</a></li>
-                <li><a href="about.html">Sobre Mí</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+<body data-lang="es">
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/51987654321?text=Hola%20CyberZenith%20Innovations,%20me%20interesan%20sus%20servicios%20de%20ciberseguridad" class="whatsapp-btn" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <nav class="nav" role="navigation" aria-label="Navegación principal">
+                <div class="logo">CyberZenith <span>Innovations</span></div>
+                
+                <ul class="nav-links" role="menubar">
+                    <li role="none"><a href="#inicio" role="menuitem" class="lang-es">Inicio</a><a href="#inicio" role="menuitem" class="lang-en">Home</a></li>
+                    <li role="none"><a href="#servicios" role="menuitem" class="lang-es">Servicios</a><a href="#servicios" role="menuitem" class="lang-en">Services</a></li>
+                    <li role="none"><a href="#expertise" role="menuitem" class="lang-es">Expertise</a><a href="#expertise" role="menuitem" class="lang-en">Expertise</a></li>
+                    <li role="none"><a href="#precios" role="menuitem" class="lang-es">Precios</a><a href="#precios" role="menuitem" class="lang-en">Pricing</a></li>
+                    <li role="none"><a href="#contacto" role="menuitem" class="lang-es">Contacto</a><a href="#contacto" role="menuitem" class="lang-en">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="lang-switcher" id="langToggle">
+                        <span class="lang-es">EN</span>
+                        <span class="lang-en">ES</span>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Abrir menú">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <section class="hero">
-        <h1>CyberZenith Innovations</h1>
-        <p>Expertos Master en Desarrollo Web Seguro, UI/UX Avanzado & Pentesting Testing</p>
-        <p>Lima, Perú & Servicios Internacionales 2025-2026</p>
-        <a href="contacto.html" class="cta-button">Comenzar Proyecto</a>
-    </section>
-
-    <section class="services-preview">
-        <h2 class="section-title">Servicios Especializados</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon web-dev">🛡️</div>
-                <h3>Desarrollo Web Seguro</h3>
-                <p>Desarrollo full-stack con enfoque en seguridad desde el diseño. Implementación de mejores prácticas OWASP y código seguro.</p>
-                <a href="servicios.html#web" class="cta-button" style="padding: 0.5rem 1.5rem; margin-top: 1rem;">Saber Más</a>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-icon ui-ux">🎨</div>
-                <h3>Desarrollo UI/UX</h3>
-                <p>Interfaces modernas, accesibles y optimizadas para conversión. Diseño centrado en el usuario con metodologías ágiles.</p>
-                <a href="servicios.html#ui" class="cta-button" style="padding: 0.5rem 1.5rem; margin-top: 1rem;">Saber Más</a>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-icon pentesting">🔍</div>
-                <h3>Pentesting Testing</h3>
-                <p>Assessment completo de vulnerabilidades OWASP Top 10 2025. Pruebas de penetración éticas y reportes ejecutivos.</p>
-                <a href="servicios.html#pentesting" class="cta-button" style="padding: 0.5rem 1.5rem; margin-top: 1rem;">Saber Más</a>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero" role="main">
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge lang-es">Top 1% Elite en Ciberseguridad</div>
+                <div class="badge lang-en">Top 1% Elite in Cybersecurity</div>
+                
+                <h1 class="lang-es">Expertos en <span class="cyber-text">Ciberseguridad</span> & Desarrollo Web Seguro</h1>
+                <h1 class="lang-en">Experts in <span class="cyber-text">Cybersecurity</span> & Secure Web Development</h1>
+                
+                <p class="hero-subtitle lang-es">Consultoría elite en Ciberseguridad SOC, Pentesting Web OWASP Top 10 2025 y Desarrollo UI Seguro. Protección digital avanzada para empresas peruanas e internacionales.</p>
+                <p class="hero-subtitle lang-en">Elite consulting in SOC Cybersecurity, OWASP Top 10 2025 Web Pentesting and Secure UI Development. Advanced digital protection for Peruvian and international companies.</p>
+                
+                <div class="cta-buttons">
+                    <a href="#contacto" class="btn btn-primary lang-es">Consulta Gratuita</a>
+                    <a href="#contacto" class="btn btn-primary lang-en">Free Consultation</a>
+                    
+                    <a href="#servicios" class="btn btn-secondary lang-es">Nuestros Servicios</a>
+                    <a href="#servicios" class="btn btn-secondary lang-en">Our Services</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="stats-section">
-        <div class="stats-grid">
-            <div class="stat-item">
-                <h3>100%</h3>
-                <p>Proyectos Seguros</p>
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="lang-es">Servicios Especializados</h2>
+                <h2 class="lang-en">Specialized Services</h2>
+                <p class="section-subtitle lang-es">Soluciones de seguridad y desarrollo de clase mundial para proteger y potenciar tu negocio digital</p>
+                <p class="section-subtitle lang-en">World-class security and development solutions to protect and empower your digital business</p>
             </div>
-            <div class="stat-item">
-                <h3>24/7</h3>
-                <p>Soporte Disponible</p>
-            </div>
-            <div class="stat-item">
-                <h3>0%</h3>
-                <p>Vulnerabilidades Conocidas</p>
-            </div>
-            <div class="stat-item">
-                <h3>2025-2026</h3>
-                <p>Tecnología Actualizada</p>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="lang-es">Ciberseguridad SOC</h3>
+                    <h3 class="lang-en">SOC Cybersecurity</h3>
+                    <p class="lang-es">Monitoreo continuo, detección de amenazas y respuesta a incidentes con tecnología de última generación.</p>
+                    <p class="lang-en">Continuous monitoring, threat detection and incident response with cutting-edge technology.</p>
+                    <ul class="service-features">
+                        <li class="lang-es">Monitoreo SOC 24/7</li>
+                        <li class="lang-en">24/7 SOC Monitoring</li>
+                        
+                        <li class="lang-es">Threat Hunting avanzado</li>
+                        <li class="lang-en">Advanced Threat Hunting</li>
+                        
+                        <li class="lang-es">Respuesta a incidentes</li>
+                        <li class="lang-en">Incident Response</li>
+                        
+                        <li class="lang-es">Hardening de sistemas</li>
+                        <li class="lang-en">System Hardening</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3 class="lang-es">Pentesting Web</h3>
+                    <h3 class="lang-en">Web Pentesting</h3>
+                    <p class="lang-es">Pruebas de penetración exhaustivas siguiendo el estándar OWASP Top 10 2025 para identificar vulnerabilidades críticas.</p>
+                    <p class="lang-en">Comprehensive penetration tests following OWASP Top 10 2025 standard to identify critical vulnerabilities.</p>
+                    <ul class="service-features">
+                        <li class="lang-es">OWASP Top 10 2025</li>
+                        <li class="lang-en">OWASP Top 10 2025</li>
+                        
+                        <li class="lang-es">Assessment de vulnerabilidades</li>
+                        <li class="lang-en">Vulnerability Assessment</li>
+                        
+                        <li class="lang-es">Red Team operations</li>
+                        <li class="lang-en">Red Team Operations</li>
+                        
+                        <li class="lang-es">Reportes ejecutivos</li>
+                        <li class="lang-en">Executive Reports</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="lang-es">Desarrollo UI Seguro</h3>
+                    <h3 class="lang-en">Secure UI Development</h3>
+                    <p class="lang-es">Interfaces de usuario modernas, responsivas y seguras con enfoque en performance y experiencia de usuario.</p>
+                    <p class="lang-en">Modern, responsive and secure user interfaces with focus on performance and user experience.</p>
+                    <ul class="service-features">
+                        <li class="lang-es">Interfaces modernas</li>
+                        <li class="lang-en">Modern Interfaces</li>
+                        
+                        <li class="lang-es">Arquitectura segura</li>
+                        <li class="lang-en">Secure Architecture</li>
+                        
+                        <li class="lang-es">Performance optimizado</li>
+                        <li class="lang-en">Optimized Performance</li>
+                        
+                        <li class="lang-es">SEO avanzado</li>
+                        <li class="lang-en">Advanced SEO</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>CyberZenith Innovations</h3>
-                <p>Expertos en desarrollo web seguro y ciberseguridad. Soluciones innovadoras para empresas y startups.</p>
-                <div class="social-links">
-                    <a href="https://github.com/CyberZenithAI" title="GitHub">GitHub</a>
-                    <a href="https://linkedin.com" title="LinkedIn">LinkedIn</a>
-                    <a href="mailto:webdev.student123@outlook.com" title="Email">Email</a>
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="lang-es">Nuestro Expertise</h2>
+                <h2 class="lang-en">Our Expertise</h2>
+                <p class="section-subtitle lang-es">Más de 3 años de experiencia en ciberseguridad y desarrollo con certificaciones internacionales</p>
+                <p class="section-subtitle lang-en">Over 3 years of experience in cybersecurity and development with international certifications</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label lang-es">Certificaciones Internacionales</div>
+                    <div class="stat-label lang-en">International Certifications</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label lang-es">Proyectos Completados</div>
+                    <div class="stat-label lang-en">Completed Projects</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label lang-es">Satisfacción del Cliente</div>
+                    <div class="stat-label lang-en">Client Satisfaction</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label lang-es">Soporte Disponible</div>
+                    <div class="stat-label lang-en">Available Support</div>
                 </div>
             </div>
             
-            <div class="footer-section">
-                <h3>Servicios</h3>
-                <ul style="list-style: none;">
-                    <li><a href="servicios.html#web" style="color: #ccc; text-decoration: none;">Desarrollo Web</a></li>
-                    <li><a href="servicios.html#ui" style="color: #ccc; text-decoration: none;">UI/UX Design</a></li>
-                    <li><a href="servicios.html#pentesting" style="color: #ccc; text-decoration: none;">Pentesting</a></li>
-                    <li><a href="servicios.html#consultoria" style="color: #ccc; text-decoration: none;">Consultoría</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Contacto</h3>
-                <p>📧 webdev.student123@outlook.com</p>
-                <p>📍 Lima, Perú</p>
-                <p>🌐 Remoto Global</p>
+            <div class="certifications">
+                <span class="cert-badge">Cisco CyberOps</span>
+                <span class="cert-badge">SecurityBlue Team</span>
+                <span class="cert-badge">OWASP Top 10</span>
+                <span class="cert-badge">Ethical Hacker</span>
+                <span class="cert-badge">SOC Analyst</span>
+                <span class="cert-badge">Python Security</span>
             </div>
         </div>
-        
-        <div class="copyright">
-            <p>&copy; 2025-2026 CyberZenith Innovations. Todos los derechos reservados.</p>
-            <p>Desarrollo Web Seguro | UI/UX Avanzado | Pentesting Testing</p>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="precios" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="lang-es">Planes y Precios</h2>
+                <h2 class="lang-en">Plans & Pricing</h2>
+                <p class="section-subtitle lang-es">Soluciones flexibles adaptadas a las necesidades de tu empresa con precios competitivos</p>
+                <p class="section-subtitle lang-en">Flexible solutions tailored to your company's needs with competitive pricing</p>
+            </div>
+            
+            <div class="pricing-tabs">
+                <button class="pricing-tab active" data-category="ciberseguridad">
+                    <span class="lang-es">Ciberseguridad</span>
+                    <span class="lang-en">Cybersecurity</span>
+                </button>
+                <button class="pricing-tab" data-category="pentesting">
+                    <span class="lang-es">Pentesting</span>
+                    <span class="lang-en">Pentesting</span>
+                </button>
+                <button class="pricing-tab" data-category="desarrollo">
+                    <span class="lang-es">Desarrollo</span>
+                    <span class="lang-en">Development</span>
+                </button>
+            </div>
+            
+            <div class="pricing-grid" id="pricingContainer">
+                <!-- Cybersecurity Plans -->
+                <div class="pricing-card" data-category="ciberseguridad">
+                    <div class="pricing-header">
+                        <h3 class="lang-es">SOC Básico</h3>
+                        <h3 class="lang-en">Basic SOC</h3>
+                        <div class="price">S/ 800<span class="price-period lang-es">/mes</span><span class="price-period lang-en">/month</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="lang-es">Monitoreo SOC 8x5</li>
+                        <li class="lang-en">8x5 SOC Monitoring</li>
+                        
+                        <li class="lang-es">Detección básica amenazas</li>
+                        <li class="lang-en">Basic Threat Detection</li>
+                        
+                        <li class="lang-es">Informes mensuales</li>
+                        <li class="lang-en">Monthly Reports</li>
+                        
+                        <li class="lang-es">Soporte email</li>
+                        <li class="lang-en">Email Support</li>
+                        
+                        <li class="disabled lang-es">Respuesta a incidentes</li>
+                        <li class="disabled lang-en">Incident Response</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-primary lang-es" style="width: 100%; text-align: center;">Contratar</a>
+                    <a href="#contacto" class="btn btn-primary lang-en" style="width: 100%; text-align: center;">Get Started</a>
+                </div>
+                
+                <div class="pricing-card featured" data-category="ciberseguridad">
+                    <div class="pricing-header">
+                        <h3 class="lang-es">SOC Avanzado</h3>
+                        <h3 class="lang-en">Advanced SOC</h3>
+                        <div class="price">S/ 1,500<span class="price-period lang-es">/mes</span><span class="price-period lang-en">/month</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="lang-es">Monitoreo SOC 24/7</li>
+                        <li class="lang-en">24/7 SOC Monitoring</li>
+                        
+                        <li class="lang-es">Threat Hunting básico</li>
+                        <li class="lang-en">Basic Threat Hunting</li>
+                        
+                        <li class="lang-es">Respuesta incidentes nivel 1</li>
+                        <li class="lang-en">Level 1 Incident Response</li>
+                        
+                        <li class="lang-es">Hardening endpoints</li>
+                        <li class="lang-en">Endpoint Hardening</li>
+                        
+                        <li class="lang-es">Soporte telefónico prioritario</li>
+                        <li class="lang-en">Priority Phone Support</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-primary lang-es" style="width: 100%; text-align: center;">Contratar</a>
+                    <a href="#contacto" class="btn btn-primary lang-en" style="width: 100%; text-align: center;">Get Started</a>
+                </div>
+                
+                <div class="pricing-card" data-category="ciberseguridad">
+                    <div class="pricing-header">
+                        <h3 class="lang-es">Red Team VIP</h3>
+                        <h3 class="lang-en">Red Team VIP</h3>
+                        <div class="price">S/ 3,500<span class="price-period lang-es">/proyecto</span><span class="price-period lang-en">/project</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="lang-es">Pentesting web completo</li>
+                        <li class="lang-en">Complete Web Pentesting</li>
+                        
+                        <li class="lang-es">Assessment vulnerabilidades</li>
+                        <li class="lang-en">Vulnerability Assessment</li>
+                        
+                        <li class="lang-es">Simulación ataques APT</li>
+                        <li class="lang-en">APT Attack Simulation</li>
+                        
+                        <li class="lang-es">Reporte ejecutivo + técnico</li>
+                        <li class="lang-en">Executive + Technical Report</li>
+                        
+                        <li class="lang-es">Soporte dedicado 24/7</li>
+                        <li class="lang-en">Dedicated 24/7 Support</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-primary lang-es" style="width: 100%; text-align: center;">Contratar</a>
+                    <a href="#contacto" class="btn btn-primary lang-en" style="width: 100%; text-align: center;">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="lang-es">Contáctanos</h2>
+                <h2 class="lang-en">Contact Us</h2>
+                <p class="section-subtitle lang-es">¿Listo para proteger tu negocio digital? Contáctanos para una consultoría gratuita</p>
+                <p class="section-subtitle lang-en">Ready to protect your digital business? Contact us for a free consultation</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 class="lang-es">Ubicación</h4>
+                            <h4 class="lang-en">Location</h4>
+                            <p class="lang-es">Lima, Perú</p>
+                            <p class="lang-en">Lima, Peru</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 class="lang-es">Email</h4>
+                            <h4 class="lang-en">Email</h4>
+                            <p>consultas@cyberzenith-innovations.pe</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 class="lang-es">Teléfono</h4>
+                            <h4 class="lang-en">Phone</h4>
+                            <p>+51 987 654 321</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 class="lang-es">Horario de Atención</h4>
+                            <h4 class="lang-en">Business Hours</h4>
+                            <p class="lang-es">Lun - Vie: 9:00 - 18:00</p>
+                            <p class="lang-en">Mon - Fri: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label lang-es">Nombre Completo</label>
+                            <label for="name" class="form-label lang-en">Full Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label lang-es">Email</label>
+                            <label for="email" class="form-label lang-en">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service" class="form-label lang-es">Servicio de Interés</label>
+                            <label for="service" class="form-label lang-en">Service of Interest</label>
+                            <select id="service" class="form-control" required>
+                                <option value="" class="lang-es">Selecciona un servicio</option>
+                                <option value="" class="lang-en">Select a service</option>
+                                <option value="ciberseguridad" class="lang-es">Ciberseguridad SOC</option>
+                                <option value="ciberseguridad" class="lang-en">SOC Cybersecurity</option>
+                                <option value="pentesting" class="lang-es">Pentesting Web</option>
+                                <option value="pentesting" class="lang-en">Web Pentesting</option>
+                                <option value="desarrollo" class="lang-es">Desarrollo UI Seguro</option>
+                                <option value="desarrollo" class="lang-en">Secure UI Development</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label lang-es">Mensaje</label>
+                            <label for="message" class="form-label lang-en">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary lang-es" style="width: 100%;">Enviar Mensaje</button>
+                        <button type="submit" class="btn btn-primary lang-en" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>CyberZenith Innovations</h4>
+                    <p class="lang-es">Expertos en ciberseguridad y desarrollo web seguro para empresas peruanas e internacionales.</p>
+                    <p class="lang-en">Experts in cybersecurity and secure web development for Peruvian and international companies.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/joaquin-ocampo" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/CyberZenithAI" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:webdev.student123@outlook.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="lang-es">Enlaces Rápidos</h4>
+                    <h4 class="lang-en">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio" class="lang-es">Inicio</a><a href="#inicio" class="lang-en">Home</a></li>
+                        <li><a href="#servicios" class="lang-es">Servicios</a><a href="#servicios" class="lang-en">Services</a></li>
+                        <li><a href="#expertise" class="lang-es">Expertise</a><a href="#expertise" class="lang-en">Expertise</a></li>
+                        <li><a href="#precios" class="lang-es">Precios</a><a href="#precios" class="lang-en">Pricing</a></li>
+                        <li><a href="#contacto" class="lang-es">Contacto</a><a href="#contacto" class="lang-en">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="lang-es">Servicios</h4>
+                    <h4 class="lang-en">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#servicios" class="lang-es">Ciberseguridad SOC</a><a href="#servicios" class="lang-en">SOC Cybersecurity</a></li>
+                        <li><a href="#servicios" class="lang-es">Pentesting Web</a><a href="#servicios" class="lang-en">Web Pentesting</a></li>
+                        <li><a href="#servicios" class="lang-es">Desarrollo UI Seguro</a><a href="#servicios" class="lang-en">Secure UI Development</a></li>
+                        <li><a href="#servicios" class="lang-es">Consultoría TI</a><a href="#servicios" class="lang-en">IT Consulting</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="lang-es">&copy; 2025 CyberZenith Innovations Perú. Todos los derechos reservados.</p>
+                <p class="lang-en">&copy; 2025 CyberZenith Innovations Peru. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
     <script>
-        // JavaScript seguro para funcionalidad básica
-        document.addEventListener('DOMContentLoaded', function() {
-            // Menú móvil
-            const mobileMenu = document.querySelector('.mobile-menu');
+        // Language Toggle
+        document.getElementById('langToggle').addEventListener('click', function() {
+            const currentLang = document.body.getAttribute('data-lang');
+            const newLang = currentLang === 'es' ? 'en' : 'es';
+            document.body.setAttribute('data-lang', newLang);
+            
+            // Update button text
+            this.querySelector('.lang-es').style.display = newLang === 'es' ? 'none' : 'block';
+            this.querySelector('.lang-en').style.display = newLang === 'en' ? 'none' : 'block';
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Pricing tabs
+        document.querySelectorAll('.pricing-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Remove active class from all tabs
+                document.querySelectorAll('.pricing-tab').forEach(t => {
+                    t.classList.remove('active');
+                });
+                
+                // Add active class to clicked tab
+                this.classList.add('active');
+                
+                // Filter pricing cards
+                const category = this.getAttribute('data-category');
+                const cards = document.querySelectorAll('.pricing-card');
+                
+                cards.forEach(card => {
+                    if (category === 'all' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        document.getElementById('mobileMenuToggle').addEventListener('click', function() {
             const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
             
-            if (mobileMenu) {
-                mobileMenu.addEventListener('click', function() {
-                    navLinks.classList.toggle('active');
-                });
+            // Simple form validation
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+            
+            if (!name || !email || !service || !message) {
+                alert('Por favor complete todos los campos / Please fill all fields');
+                return;
             }
             
-            // Cerrar menú al hacer clic en un enlace
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.addEventListener('click', function() {
-                    navLinks.classList.remove('active');
-                });
-            });
+            // Simulate form submission
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
             
-            // Smooth scrolling
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
+            submitBtn.textContent = 'Enviando... / Sending...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                alert('Mensaje enviado con éxito. Nos pondremos en contacto pronto. / Message sent successfully. We will contact you soon.');
+                this.reset();
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    const navLinks = document.querySelector('.nav-links');
+                    if (window.innerWidth <= 768) {
+                        navLinks.style.display = 'none';
                     }
-                });
-            });
-            
-            // Animación de stats
-            const statsSection = document.querySelector('.stats-section');
-            const statNumbers = document.querySelectorAll('.stat-item h3');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        statNumbers.forEach((stat, index) => {
-                            setTimeout(() => {
-                                stat.style.animation = 'countUp 2s ease-out';
-                            }, index * 300);
-                        });
-                    }
-                });
-            });
-            
-            if (statsSection) {
-                observer.observe(statsSection);
-            }
-            
-            // Añadir estilo para animación de números
-            const style = document.createElement('style');
-            style.textContent = `
-                @keyframes countUp {
-                    from { 
-                        opacity: 0;
-                        transform: translateY(20px);
-                    }
-                    to { 
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
                 }
-            `;
-            document.head.appendChild(style);
+            });
+        });
+
+        // Initialize animations on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.service-card, .stat-card, .pricing-card').forEach(el => {
+            observer.observe(el);
         });
     </script>
 </body>
