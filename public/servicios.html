@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="es-PE" class="no-js" itemscope itemtype="https://schema.org/Service">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | CyberZenith Innovations Perú | Ciberseguridad SOC, Pentesting & Desarrollo Web</title>
+    
+    <!-- === SEO MEGA OPTIMIZADO 10/10 === -->
+    <meta name="description" content="Servicios especializados de CyberZenith Innovations Perú: Ciberseguridad SOC, Pentesting Web OWASP Top 10 2025, Blue Team, Desarrollo UI Seguro y consultoría TI.">
+    <meta name="keywords" content="servicios ciberseguridad perú, pentesting web lima, soc monitoring, blue team perú, desarrollo web seguro, consultoría ti, ethical hacking, seguridad informática">
+    <meta name="author" content="Joaquin Ocampo - CyberZenith Innovations Perú">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Servicios | CyberZenith Innovations Perú | Ciberseguridad & Desarrollo">
+    <meta property="og:description" content="Servicios especializados en Ciberseguridad SOC, Pentesting Web OWASP Top 10 2025, Blue Team y Desarrollo UI Seguro.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cyberzenith-innovations.pe/servicios">
+    <meta property="og:image" content="https://cyberzenith-innovations.pe/assets/servicios-og-image.jpg">
+    <meta property="og:site_name" content="CyberZenith Innovations Perú">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Servicios | CyberZenith Innovations Perú">
+    <meta name="twitter:description" content="Servicios especializados en Ciberseguridad, Pentesting y Desarrollo Seguro">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://cyberzenith-innovations.pe/servicios">
+    
+    <!-- === SEGURIDAD MÁXIMA === -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+        font-src 'self' https://fonts.gstatic.com;
+        img-src 'self' data: https:;
+        connect-src 'self';
+        frame-ancestors 'none';
+        base-uri 'self';
+        form-action 'self';
+        object-src 'none'">
+    
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* === VARIABLES GLOBALES === */
+        :root {
+            --primary: #0066CC;
+            --primary-dark: #0052A3;
+            --secondary: #FF6B00;
+            --secondary-dark: #E55A00;
+            --accent: #00D4AA;
+            --dark: #0A0A0A;
+            --dark-light: #1A1A1A;
+            --light: #F8F9FA;
+            --lighter: #FFFFFF;
+            --gray: #6C757D;
+            --success: #28A745;
+            --danger: #DC3545;
+            
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+            --shadow-xl: 0 20px 50px rgba(0, 0, 0, 0.2);
+            
+            --border-radius: 8px;
+            --border-radius-lg: 12px;
+            
+            --transition: all 0.3s ease;
+        }
+
+        /* === RESET Y BASE === */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+        }
+
+        /* === TIPOGRAFÍA === */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            color: var(--dark);
+        }
+
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 1.75rem);
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--gray);
+            font-size: 1.125rem;
+            line-height: 1.7;
+        }
+
+        /* === LAYOUT === */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 5rem 0;
+        }
+
+        /* === HEADER === */
+        .header {
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(20px);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .header.scrolled {
+            background: rgba(10, 10, 10, 0.98);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            color: var(--secondary);
+        }
+
+        .logo span {
+            color: var(--secondary);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+
+        .nav-links a.active {
+            color: var(--secondary);
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--secondary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--secondary);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* === HERO SERVICIOS === */
+        .services-hero {
+            background: linear-gradient(135deg, var(--dark) 0%, var(--dark-light) 100%);
+            color: white;
+            padding: 140px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .services-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(0, 102, 204, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 107, 0, 0.1) 0%, transparent 50%);
+        }
+
+        .services-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .services-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            box-shadow: var(--shadow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--secondary);
+        }
+
+        /* === SERVICIOS DESTACADOS === */
+        .featured-services {
+            background: var(--lighter);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .service-features {
+            list-style: none;
+            margin: 1.5rem 0;
+            text-align: left;
+        }
+
+        .service-features li {
+            padding: 0.5rem 0;
+            color: var(--gray);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .service-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        /* === DETALLE DE SERVICIOS === */
+        .services-detail {
+            background: linear-gradient(135deg, var(--light) 0%, #f0f4f8 100%);
+        }
+
+        .service-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+            background: var(--lighter);
+            padding: 0.5rem;
+            border-radius: var(--border-radius);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            flex-wrap: wrap;
+        }
+
+        .service-tab {
+            flex: 1;
+            min-width: 150px;
+            padding: 1rem 1.5rem;
+            background: none;
+            border: none;
+            font-weight: 600;
+            color: var(--gray);
+            cursor: pointer;
+            transition: var(--transition);
+            border-radius: var(--border-radius);
+            text-align: center;
+        }
+
+        .service-tab.active {
+            background: white;
+            color: var(--primary);
+            box-shadow: var(--shadow);
+        }
+
+        .service-content {
+            display: none;
+        }
+
+        .service-content.active {
+            display: block;
+        }
+
+        .service-detail-card {
+            background: white;
+            border-radius: var(--border-radius-lg);
+            padding: 3rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .service-detail-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .service-detail-icon {
+            font-size: 4rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            flex-shrink: 0;
+        }
+
+        .service-detail-info h3 {
+            margin-bottom: 1rem;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .benefit-card {
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--primary);
+        }
+
+        .benefit-card h4 {
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+
+        .process-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .process-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: var(--light);
+            border-radius: var(--border-radius);
+        }
+
+        .step-number {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        /* === CASOS DE ÉXITO === */
+        .success-cases {
+            background: var(--lighter);
+        }
+
+        .cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .case-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .case-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .case-industry {
+            background: var(--primary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .case-results {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .result-value {
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* === CTA SECTION === */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            color: white;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        /* === FOOTER === */
+        .footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 0 1.5rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-column h4 {
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.875rem;
+        }
+
+        /* === RESPONSIVE DESIGN === */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--dark);
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: var(--shadow-lg);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .services-hero {
+                padding: 120px 0 60px;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .service-tabs {
+                flex-direction: column;
+            }
+            
+            .service-detail-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .service-detail-card {
+                padding: 2rem;
+            }
+            
+            .cases-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+                justify-content: center;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            section {
+                padding: 3rem 0;
+            }
+            
+            .service-card,
+            .service-detail-card,
+            .case-card {
+                padding: 1.5rem;
+            }
+        }
+
+        /* === ANIMACIONES === */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .stagger-animation > * {
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .stagger-animation > *:nth-child(1) { animation-delay: 0.1s; }
+        .stagger-animation > *:nth-child(2) { animation-delay: 0.2s; }
+        .stagger-animation > *:nth-child(3) { animation-delay: 0.3s; }
+        .stagger-animation > *:nth-child(4) { animation-delay: 0.4s; }
+        .stagger-animation > *:nth-child(5) { animation-delay: 0.5s; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <nav class="nav" role="navigation" aria-label="Navegación principal">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-shield-alt logo-icon"></i>
+                    CyberZenith <span>Innovations</span>
+                </a>
+                
+                <ul class="nav-links" role="menubar">
+                    <li role="none"><a href="index.html" role="menuitem">Inicio</a></li>
+                    <li role="none"><a href="servicios.html" role="menuitem" class="active">Servicios</a></li>
+                    <li role="none"><a href="blog.html" role="menuitem">Blog</a></li>
+                    <li role="none"><a href="index.html#precios" role="menuitem">Precios</a></li>
+                    <li role="none"><a href="index.html#contacto" role="menuitem">Contacto</a></li>
+                </ul>
+                
+                <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Services Hero Section -->
+    <section class="services-hero" role="main">
+        <div class="container">
+            <div class="services-hero-content stagger-animation">
+                <h1 class="fade-in-up">Nuestros Servicios Especializados</h1>
+                
+                <p class="services-subtitle fade-in-up">
+                    Soluciones integrales de ciberseguridad y desarrollo web seguro diseñadas para proteger 
+                    y potenciar tu negocio en el entorno digital actual. Tecnología de vanguardia con expertise certificado.
+                </p>
+                
+                <div class="cta-buttons fade-in-up">
+                    <a href="index.html#contacto" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Consulta Gratuita
+                    </a>
+                    
+                    <a href="index.html#precios" class="btn btn-secondary">
+                        <i class="fas fa-tags"></i>
+                        Ver Precios
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Services -->
+    <section class="featured-services">
+        <div class="container">
+            <div class="section-header stagger-animation">
+                <h2 class="fade-in-up">Servicios Destacados</h2>
+                <p class="section-subtitle fade-in-up">
+                    Soluciones completas adaptadas a las necesidades específicas de cada empresa, 
+                    desde startups hasta corporaciones enterprise.
+                </p>
+            </div>
+            
+            <div class="services-grid stagger-animation">
+                <!-- Servicio 1 -->
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Ciberseguridad SOC</h3>
+                    <p>Monitoreo continuo y gestión proactiva de seguridad con tecnología de última generación.</p>
+                    <ul class="service-features">
+                        <li>Monitoreo SOC 24/7</li>
+                        <li>Detección de amenazas en tiempo real</li>
+                        <li>Respuesta a incidentes</li>
+                        <li>Threat Intelligence</li>
+                        <li>Compliance y reporting</li>
+                    </ul>
+                    <a href="#soc-details" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                        Más Información
+                    </a>
+                </div>
+                
+                <!-- Servicio 2 -->
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Blue Team</h3>
+                    <p>Defensa proactiva y hardening de sistemas para proteger tu infraestructura crítica.</p>
+                    <ul class="service-features">
+                        <li>Hardening de sistemas</li>
+                        <li>Gestión de vulnerabilidades</li>
+                        <li>Análisis forense digital</li>
+                        <li>Respuesta a incidentes</li>
+                        <li>Security awareness</li>
+                    </ul>
+                    <a href="#blue-team-details" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                        Más Información
+                    </a>
+                </div>
+                
+                <!-- Servicio 3 -->
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Pentesting Web</h3>
+                    <p>Pruebas de penetración exhaustivas siguiendo estándares OWASP Top 10 2025.</p>
+                    <ul class="service-features">
+                        <li>OWASP Top 10 2025</li>
+                        <li>Testing manual y automático</li>
+                        <li>Análisis de código seguro</li>
+                        <li>Reportes ejecutivos</li>
+                        <li>Re-testing incluido</li>
+                    </ul>
+                    <a href="#pentesting-details" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                        Más Información
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Detail -->
+    <section class="services-detail" id="services-detail">
+        <div class="container">
+            <div class="section-header">
+                <h2>Detalle de Servicios</h2>
+                <p class="section-subtitle">
+                    Conoce en profundidad cada uno de nuestros servicios y cómo pueden beneficiar a tu organización
+                </p>
+            </div>
+            
+            <div class="service-tabs">
+                <button class="service-tab active" data-service="soc">
+                    Ciberseguridad SOC
+                </button>
+                <button class="service-tab" data-service="blue-team">
+                    Blue Team
+                </button>
+                <button class="service-tab" data-service="pentesting">
+                    Pentesting Web
+                </button>
+                <button class="service-tab" data-service="development">
+                    Desarrollo Seguro
+                </button>
+            </div>
+            
+            <!-- SOC Service -->
+            <div class="service-content active" id="soc-details">
+                <div class="service-detail-card">
+                    <div class="service-detail-header">
+                        <div class="service-detail-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="service-detail-info">
+                            <h3>Ciberseguridad SOC como Servicio</h3>
+                            <p>
+                                Nuestro Security Operations Center (SOC) proporciona monitoreo continuo y gestión proactiva 
+                                de seguridad, utilizando tecnología de vanguardia y procesos certificados para proteger 
+                                tu infraestructura digital las 24 horas del día, los 7 días de la semana.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <h4>Monitoreo Continuo</h4>
+                            <p>Vigilancia 24/7 de tu infraestructura con detección temprana de amenazas</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Threat Intelligence</h4>
+                            <p>Inteligencia de amenazas actualizada para prevenir ataques conocidos</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Respuesta Inmediata</h4>
+                            <p>Equipo especializado listo para responder a incidentes de seguridad</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Compliance</h4>
+                            <p>Cumplimiento de regulaciones y estándares de seguridad internacionales</p>
+                        </div>
+                    </div>
+                    
+                    <h4>Nuestro Proceso SOC</h4>
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h5>Evaluación Inicial</h5>
+                                <p>Análisis completo de tu infraestructura y necesidades específicas</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h5>Implementación</h5>
+                                <p>Despliegue de herramientas y configuración de monitoreo</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h5>Monitoreo Continuo</h5>
+                                <p>Vigilancia 24/7 con análisis proactivo de amenazas</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <div>
+                                <h5>Reportes y Mejora</h5>
+                                <p>Reportes periódicos y optimización continua del servicio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Blue Team Service -->
+            <div class="service-content" id="blue-team-details">
+                <div class="service-detail-card">
+                    <div class="service-detail-header">
+                        <div class="service-detail-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <div class="service-detail-info">
+                            <h3>Servicios de Blue Team</h3>
+                            <p>
+                                Nuestro equipo de defensa se especializa en fortalecer tus sistemas y procesos 
+                                para prevenir, detectar y responder eficazmente a las amenazas cibernéticas, 
+                                implementando las mejores prácticas de seguridad defensiva.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <h4>Hardening de Sistemas</h4>
+                            <p>Configuración segura de servidores, endpoints y aplicaciones</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Gestión de Vulnerabilidades</h4>
+                            <p>Identificación y remediación proactiva de vulnerabilidades</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Análisis Forense</h4>
+                            <p>Investigación de incidentes y análisis post-mortem</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Security Awareness</h4>
+                            <p>Capacitación del personal en conciencia de seguridad</p>
+                        </div>
+                    </div>
+                    
+                    <h4>Metodología Blue Team</h4>
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h5>Evaluación de Postura</h5>
+                                <p>Análisis de la situación actual de seguridad de la organización</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h5>Hardening y Configuración</h5>
+                                <p>Fortalecimiento de sistemas y configuración de controles</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h5>Monitoreo y Detección</h5>
+                                <p>Implementación de sistemas de detección y respuesta</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <div>
+                                <h5>Mejora Continua</h5>
+                                <p>Optimización constante basada en métricas y threat intelligence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pentesting Service -->
+            <div class="service-content" id="pentesting-details">
+                <div class="service-detail-card">
+                    <div class="service-detail-header">
+                        <div class="service-detail-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <div class="service-detail-info">
+                            <h3>Pentesting Web Avanzado</h3>
+                            <p>
+                                Realizamos pruebas de penetración exhaustivas siguiendo la metodología OWASP Top 10 2025, 
+                                identificando vulnerabilidades críticas antes de que los atacantes puedan explotarlas.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <h4>OWASP Top 10 2025</h4>
+                            <p>Cobertura completa de las 10 vulnerabilidades web más críticas</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Testing Manual</h4>
+                            <p>Análisis manual exhaustivo más allá de las herramientas automatizadas</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Análisis de Código</h4>
+                            <p>Revisión de código fuente para identificar vulnerabilidades</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Reportes Detallados</h4>
+                            <p>Documentación completa con evidencia y recomendaciones</p>
+                        </div>
+                    </div>
+                    
+                    <h4>Metodología de Pentesting</h4>
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h5>Recolección de Información</h5>
+                                <p>Identificación de activos y superficie de ataque</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h5>Análisis de Vulnerabilidades</h5>
+                                <p>Escaneo automatizado y testing manual</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h5>Explotación Controlada</h5>
+                                <p>Verificación de vulnerabilidades mediante explotación ética</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <div>
+                                <h5>Reporte y Remediation</h5>
+                                <p>Documentación y soporte en la corrección de vulnerabilidades</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Development Service -->
+            <div class="service-content" id="development-details">
+                <div class="service-detail-card">
+                    <div class="service-detail-header">
+                        <div class="service-detail-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="service-detail-info">
+                            <h3>Desarrollo Web Seguro</h3>
+                            <p>
+                                Desarrollamos aplicaciones web modernas y seguras desde el diseño inicial, 
+                                implementando prácticas de Security by Design y asegurando el cumplimiento 
+                                de los más altos estándares de seguridad.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <h4>Security by Design</h4>
+                            <p>Seguridad integrada desde la fase de diseño del proyecto</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Desarrollo Moderno</h4>
+                            <p>Tecnologías actuales y mejores prácticas de desarrollo</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Performance Optimizado</h4>
+                            <p>Aplicaciones rápidas y eficientes con alta disponibilidad</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>SEO Avanzado</h4>
+                            <p>Optimización para motores de búsqueda desde el inicio</p>
+                        </div>
+                    </div>
+                    
+                    <h4>Proceso de Desarrollo Seguro</h4>
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h5>Análisis y Diseño</h5>
+                                <p>Definición de requisitos y arquitectura segura</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h5>Desarrollo Seguro</h5>
+                                <p>Implementación con revisiones continuas de seguridad</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h5>Testing y QA</h5>
+                                <p>Pruebas de seguridad y control de calidad exhaustivo</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <div>
+                                <h5>Despliegue y Soporte</h5>
+                                <p>Implementación segura y soporte continuo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Cases -->
+    <section class="success-cases">
+        <div class="container">
+            <div class="section-header">
+                <h2>Casos de Éxito</h2>
+                <p class="section-subtitle">
+                    Resultados tangibles que hemos logrado para nuestros clientes en diversos sectores
+                </p>
+            </div>
+            
+            <div class="cases-grid stagger-animation">
+                <div class="case-card fade-in-up">
+                    <span class="case-industry">FinTech</span>
+                    <h3>Implementación SOC para Startup Financiera</h3>
+                    <p>Despliegue completo de Security Operations Center para una fintech en crecimiento, logrando detección temprana de amenazas y compliance regulatorio.</p>
+                    <div class="case-results">
+                        <div class="result-item">
+                            <span>Reducción de incidentes:</span>
+                            <span class="result-value">-85%</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Tiempo de respuesta:</span>
+                            <span class="result-value">15 min</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Compliance alcanzado:</span>
+                            <span class="result-value">100%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="case-card fade-in-up">
+                    <span class="case-industry">E-commerce</span>
+                    <h3>Pentesting para Plataforma E-commerce</h3>
+                    <p>Auditoría de seguridad completa para plataforma de e-commerce con millones de usuarios, identificando y corrigiendo vulnerabilidades críticas.</p>
+                    <div class="case-results">
+                        <div class="result-item">
+                            <span>Vulnerabilidades críticas:</span>
+                            <span class="result-value">12 encontradas</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Tiempo de remediación:</span>
+                            <span class="result-value">48 horas</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Mejora de seguridad:</span>
+                            <span class="result-value">+95%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="case-card fade-in-up">
+                    <span class="case-industry">Corporación</span>
+                    <h3>Blue Team para Empresa Industrial</h3>
+                    <p>Fortalecimiento de postura de seguridad para corporación industrial con múltiples sedes, implementando controles defensivos avanzados.</p>
+                    <div class="case-results">
+                        <div class="result-item">
+                            <span>Hardening completado:</span>
+                            <span class="result-value">150+ sistemas</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Detección de amenazas:</span>
+                            <span class="result-value">+300%</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Reducción de superficie:</span>
+                            <span class="result-value">-70%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="section-header stagger-animation">
+                <h2 class="fade-in-up">¿Listo para Fortalecer tu Seguridad?</h2>
+                <p class="section-subtitle fade-in-up">
+                    Contáctanos hoy mismo para una consultoría gratuita y descubre cómo podemos proteger tu negocio
+                </p>
+            </div>
+            
+            <div class="cta-buttons fade-in-up">
+                <a href="index.html#contacto" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i>
+                    Agendar Consulta
+                </a>
+                
+                <a href="tel:+51987654321" class="btn btn-secondary">
+                    <i class="fas fa-phone"></i>
+                    Llamar Ahora
+                </a>
+                
+                <a href="https://wa.me/51987654321" class="btn btn-secondary" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>CyberZenith Innovations</h4>
+                    <p>Expertos en ciberseguridad y desarrollo web seguro para empresas peruanas e internacionales. Protección digital de clase mundial.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/joaquin-ocampo" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/CyberZenithAI" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:webdev.student123@outlook.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="#soc-details">Ciberseguridad SOC</a></li>
+                        <li><a href="#blue-team-details">Blue Team</a></li>
+                        <li><a href="#pentesting-details">Pentesting Web</a></li>
+                        <li><a href="#development-details">Desarrollo Seguro</a></li>
+                        <li><a href="index.html#precios">Ver Todos los Servicios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html#precios">Precios</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:consultas@cyberzenith-innovations.pe">consultas@cyberzenith-innovations.pe</a></li>
+                        <li><a href="tel:+51987654321">+51 987 654 321</a></li>
+                        <li>Lima, Perú</li>
+                        <li>Lun - Vie: 9:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 CyberZenith Innovations Perú. Todos los derechos reservados. | Ciberseguridad Elite para el Mundo Digital</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // === HEADER SCROLL EFFECT ===
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // === MOBILE MENU TOGGLE ===
+        document.getElementById('mobileMenuToggle').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+            this.innerHTML = navLinks.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+
+        // Cerrar menú móvil al hacer clic en un enlace
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                const navLinks = document.querySelector('.nav-links');
+                const menuToggle = document.getElementById('mobileMenuToggle');
+                if (window.innerWidth <= 768) {
+                    navLinks.classList.remove('active');
+                    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+        });
+
+        // === SERVICE TABS ===
+        document.querySelectorAll('.service-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Remove active class from all tabs
+                document.querySelectorAll('.service-tab').forEach(t => {
+                    t.classList.remove('active');
+                });
+                
+                // Add active class to clicked tab
+                this.classList.add('active');
+                
+                // Hide all service contents
+                document.querySelectorAll('.service-content').forEach(content => {
+                    content.classList.remove('active');
+                });
+                
+                // Show selected service content
+                const serviceId = this.getAttribute('data-service');
+                document.getElementById(`${serviceId}-details`).classList.add('active');
+            });
+        });
+
+        // === SMOOTH SCROLLING ===
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    const navLinks = document.querySelector('.nav-links');
+                    const menuToggle = document.getElementById('mobileMenuToggle');
+                    if (window.innerWidth <= 768) {
+                        navLinks.classList.remove('active');
+                        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                    }
+                    
+                    const headerHeight = document.querySelector('.header').offsetHeight;
+                    const targetPosition = targetElement.offsetTop - headerHeight - 20;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // === INTERSECTION OBSERVER PARA ANIMACIONES ===
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // === SEGURIDAD ADICIONAL ===
+        if (self !== top) {
+            top.location = self.location;
+        }
+
+        // Console protection
+        console.log('%c🔒 CyberZenith Innovations Servicios - Seguridad Activada', 'color: #0066CC; font-weight: bold; font-size: 16px;');
+    </script>
+</body>
+</html>
